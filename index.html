@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecionando...</title>
+
+<!-- Redirecionamento imediato -->
+<meta http-equiv="refresh" content="0; url=https://taboigames-free.github.io/home.html">
+
+<style>
+/* ===== ESTILO STEAM ===== */
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at top, #1b2838, #0b141f);
+    font-family: Arial, Helvetica, sans-serif;
+    color:#c7d5e0;
+}
+
+.container{
+    text-align:center;
+    background:#16202d;
+    padding:40px 50px;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(0,0,0,0.6);
+    max-width:500px;
+}
+
+h1{
+    margin:0 0 15px 0;
+    font-size:28px;
+    color:#66c0f4;
+}
+
+.loading{
+    margin:20px auto;
+    width:40px;
+    height:40px;
+    border:4px solid #2a475e;
+    border-top:4px solid #66c0f4;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+p{
+    font-size:14px;
+    color:#8f98a0;
+    line-height:1.6;
+}
+
+a{
+    color:#66c0f4;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+@keyframes spin{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Redirecionando...</h1>
+
+    <div class="loading"></div>
+
+    <p>
+        Você está sendo redirecionado automaticamente.<br><br>
+        Se estiver demorando, tente atualizar a página ou entre em contato
+        com o desenvolvedor para resolver o problema.
+    </p>
+
+    <!-- fallback caso o redirect automático falhe -->
+    <p>
+        <a href="https://taboigames-free.github.io/home.html">
+            Clique aqui caso não seja redirecionado.
+        </a>
+    </p>
+</div>
+
+<script>
+/* Redirecionamento imediato via JS (backup) */
+window.location.replace("https://taboigames-free.github.io/home.html");
+</script>
+
+</body>
+</html>
