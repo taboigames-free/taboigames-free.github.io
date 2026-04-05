@@ -1,0 +1,19 @@
+{
+  "id": "stardew-valley",
+  "nome": "Stardew Valley",
+  "cover": "https://ankergames.net/uploads/poster/10-2024/r0TdNe2Tdq.webp",
+  "imagemdefundo": "https://ankergames.net/uploads/poster/10-2024/cover-9ZFwDbqBfI.webp",
+  "bio": "Simulador de fazenda",
+  "descricao": "Você herdou o velho terreno de fazenda do seu avô em Stardew Valley. Armado com ferramentas herdadas e algumas moedas, você parte para começar sua nova vida. Você consegue aprender a viver da terra e transformar esses campos abandonados em um lar próspero?",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"RAR",
+      "link":"https://tunnel1.dlproxy.uk/download/XAJeWO15O4C19Ai3Jvuqitqg5l1_CCncB25Eaa4Z71JAAM2ppGVMblIY3AWDW8k1fY0JuJ6RuqfNreqTDOqV3ZNpqRZ8J8r9qy-NDNYXkXNaeuQYc7FZFuJncnRtBm2D4qsVRd31k8tb02-QvnV2-FgMGujGhcX4VY0C6evqvXqYbbnc5Vw1HY2TS7PHMqlbs_9nl-jsmGVwreTKfmWMCas3qbutlREa47aA0riFS7YGPG5axrWAdZZV-G_E9dMWdbEPV2KyztlNGkx9kMAM5gezQyo6r-2NAJ2z9OwpXkR868MMbWWVTIGT6uUmagoYQpax5uQ4gcObOWl5UCS9brV7-q-cyVC3Af3twqc6YuCPJz4vo0XcsO5PeUNY60sEyFNC-7nUd2voy0AupP8rJVx5hbK0XUKbrK3FrxlSOmdnctz0GyNoilqBF7AEo-of8LjtnP0QGj2qadI2OIAZSQM40pdFl_uTtLfoqjSCJkrMAyO_kbnM7gEx228SeH0kR-NndP6cuAXYpEUI-MGksnLDiQzFS-zzNC66c2K9b2csWS4pt07FnzatQso7Pxdaq_xa37169JMr4Rc7z37MPFN6WkWdtLPAoE45fgBx0rg?sig=QErGQgEezBH1PLwP-erbIvQbdsjO7Mn0GiIFyhu8KTI"
+    },
+    {
+      "tipo":"APK",
+      "link":"https://download2441.mediafire.com/defublmkexbg7IqHFWYux11o6086TXkuD9f4SerH2DhrdFCndl7KBBR6Oxjd2WWha7HMsESBerkeefaY3sl8py5lx9HLSNKD6cmbCTeKHIFaXeCMwvyZDJoP_A39vkPdrrus2LIo9K4UUrYCeFq1F2-d_nDXE0cPXpsi5J1hqQlCRZ3Q/715ma6r0jht37k1/Stardew+Valley+1.6.15.0+APK_Award.apk"
+    }
+  ]
+}
