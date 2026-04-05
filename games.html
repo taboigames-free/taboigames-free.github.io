@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Games - TABOI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo" onclick="location.href='index.html'">TABOI-games</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="games.html">Games</a>
+<a href="https://github.com/taboigames-free/taboigames-free.github.io/tree/main">GitHub</a>
+</nav>
+</header>
+
+<div class="container">
+
+<input class="search" id="search" placeholder="Pesquisar jogo...">
+
+<div class="games" id="games"></div>
+
+</div>
+
+<footer>
+TABOI-games - Jogos pré-pagos gratuitos para PC
+</footer>
+
+<script>
+
+let lista = [];
+
+async function carregar(){
+    const res = await fetch("games.json");
+    lista = await res.json();
+
+    mostrar("");
+}
+
+async function mostrar(filtro){
+    const container = document.getElementById("games");
+    container.innerHTML="";
+
+    for(const jogo of lista){
+
+        const data = await fetch(`games/${jogo.id}.json`).then(r=>r.json());
+
+        if(!data.nome.toLowerCase().includes(filtro.toLowerCase()))
+            continue;
+
+        container.innerHTML += `
+        <div class="game" onclick="location.href='thegame.html?game=${data.id}'">
+            <img src="${data.cover}">
+            <h3>${data.nome}</h3>
+        </div>`;
+    }
+}
+
+document.getElementById("search").oninput =
+(e)=>mostrar(e.target.value);
+
+carregar();
+
+</script>
+
+</body>
+</html>
