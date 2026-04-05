@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo" onclick="location.href='index.html'">TABOI-games</div>
+</header>
+
+<div class="container" id="game"></div>
+
+<footer>
+TABOI-games - Jogos pré-pagos gratuitos para PC
+</footer>
+
+<script>
+
+function getGameID(){
+    const params = new URLSearchParams(location.search);
+    return params.get("game");
+}
+
+async function carregarGame(){
+
+    const id = getGameID();
+    const data = await fetch(`games/${id}.json`)
+        .then(r=>r.json());
+
+    let downloads = "";
+
+    data.downloads.forEach(d=>{
+        downloads += `
+        <a href="${d.link}" target="_blank">
+        Download ${d.tipo}
+        </a>`;
+    });
+
+    document.getElementById("game").innerHTML = `
+    <div class="game-page">
+
+        <img class="cover" src="${data.cover}">
+
+        <div>
+            <h1>${data.nome}</h1>
+            <p>${data.descricao}</p>
+
+            <div class="downloads">
+                <h3>Downloads</h3>
+                ${downloads}
+            </div>
+        </div>
+
+    </div>
+    `;
+}
+
+carregarGame();
+
+</script>
+
+</body>
+</html>
