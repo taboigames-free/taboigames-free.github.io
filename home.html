@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>TABOI-games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo" onclick="location.href='https://taboigames.github.io/home.html'">
+TABOI-games
+</div>
+
+<nav>
+<a href="https://taboigames-free.github.io/home.html">Home</a>
+<a href="https://taboigames-free.github.io/games.html">Games</a>
+<a href="https://github.com/taboigames-free/taboigames-free.github.io/tree/main">Ver no GitHub</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Jogos</h2>
+<div class="games" id="games"></div>
+</div>
+
+<footer>
+<p>TABOI-games - Jogos pré-pagos gratuitos para PC</p>
+<a href="https://github.com/taboigames-free/taboigames-free.github.io/tree/main">
+Ver no GitHub
+</a>
+</footer>
+
+<script>
+async function carregarJogos(){
+    const res = await fetch("games.json");
+    const jogos = await res.json();
+
+    const container = document.getElementById("games");
+
+    jogos.forEach(jogo=>{
+        fetch(`games/${jogo.id}.json`)
+        .then(r=>r.json())
+        .then(data=>{
+
+            container.innerHTML += `
+            <div class="game"
+             onclick="location.href='thegame.html?game=${data.id}'">
+
+                <img src="${data.cover}">
+                <h3>${data.nome}</h3>
+
+            </div>`;
+        });
+    });
+}
+
+carregarJogos();
+</script>
+
+</body>
+</html>
