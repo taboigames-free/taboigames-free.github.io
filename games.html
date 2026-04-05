@@ -37,25 +37,28 @@ let lista = [];
 async function carregar(){
     const res = await fetch("games.json");
     lista = await res.json();
-
     mostrar("");
 }
 
 async function mostrar(filtro){
+
     const container = document.getElementById("games");
     container.innerHTML="";
 
     for(const jogo of lista){
 
-        const data = await fetch(`games/${jogo.id}.json`).then(r=>r.json());
+        const data = await fetch(jogo.json).then(r=>r.json());
 
         if(!data.nome.toLowerCase().includes(filtro.toLowerCase()))
             continue;
 
         container.innerHTML += `
-        <div class="game" onclick="location.href='thegame.html?game=${data.id}'">
+        <div class="game"
+        onclick="location.href='thegame.html?game=${data.id}'">
+
             <img src="${data.cover}">
             <h3>${data.nome}</h3>
+
         </div>`;
     }
 }
