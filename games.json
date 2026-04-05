@@ -1,0 +1,26 @@
+[
+  {
+    "id": "stardew-valley",
+    "json": "games/stardewvalley.json"
+  },
+    {
+    "id": "minicraft",
+    "json": "games/minecraft.json"
+  },
+    {
+    "id": "poppy-quer-brincar-hehe",
+    "json": "games/poppy.json"
+  },
+    {
+    "id": "hytale",
+    "json": "games/hytale.json"
+  },
+    {
+    "id": "scape-road",
+    "json": "games/scaperoad.json"
+  },
+    {
+    "id": "drive-mad",
+    "json": "games/drive.json"
+  }
+]
