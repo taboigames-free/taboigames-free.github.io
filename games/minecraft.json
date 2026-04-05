@@ -1,0 +1,19 @@
+{
+  "id": "minicraft",
+  "nome": "Minecraft",
+  "cover": "https://ankergames.net/uploads/poster/11-2024/N3wybAOOpM.webp",
+  "imagemdefundo": "https://ankergames.net/uploads/poster/11-2024/cover-KGHcNJbH32.webp",
+  "bio": "Mundo Aberto",
+  "descricao": "Minecraft é um jogo feito de blocos, criaturas e comunidade. Você pode sobreviver à noite ou construir uma obra de arte – a escolha é toda sua. Mas se a ideia de explorar um vasto mundo novo sozinho parece assustadora, não se preocupe! Vamos descobrir o que é Minecraft!",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"EXE",
+      "link":"https://download2388.mediafire.com/6d2lpo00thbgJ9hd7_IfgMPhmH5WlO2lKoHlge9sdg46bTK8Z-0fOi1qno57SJmSnWhaPN6Th2GYqDao2_L5dKdWZpEo-MZhgJCJcrbodTdegDNUP-_iTeyMgpZ56vRmvmLTo0ZrJ90LtEpVLh4ly2RvbZ_s7InqtLt4suADQXZ9n42A/cexkfs0wea025vm/LegacyLauncher_Installer_legacy.exe"
+    },
+    {
+      "tipo":"APK",
+      "link":"https://download2391.mediafire.com/tott04hcpxag-dCQyCEhkPchQI82fUYBhDV-qiZjL7b6XnNeKzvJCDeR7qe-Mz5uQaF1mR64E-d2UAw_JYL6jJEreygX7KMbH0sjFgKF2rrhQCz1sM3_dbPl8KiV5W6Q1N3OTRt37kovpI9ZJGSUw_5vALXQF2rEN9qVIau-cU-tL6AH/4q2sb8nlxlugbyl/Minecraft+v1.20.51.01+-+APK+World.apk"
+    }
+  ]
+}
