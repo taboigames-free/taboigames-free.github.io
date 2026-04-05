@@ -34,25 +34,28 @@ Ver no GitHub
 
 <script>
 async function carregarJogos(){
+
     const res = await fetch("games.json");
     const jogos = await res.json();
 
     const container = document.getElementById("games");
 
     jogos.forEach(jogo=>{
-        fetch(`games/${jogo.id}.json`)
+
+        fetch(jogo.json)
         .then(r=>r.json())
         .then(data=>{
 
             container.innerHTML += `
             <div class="game"
-             onclick="location.href='thegame.html?game=${data.id}'">
+            onclick="location.href='thegame.html?game=${data.id}'">
 
                 <img src="${data.cover}">
                 <h3>${data.nome}</h3>
 
             </div>`;
         });
+
     });
 }
 
