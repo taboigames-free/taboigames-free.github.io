@@ -1,0 +1,15 @@
+{
+  "id": "scape-road",
+  "nome": "Scape Road",
+  "cover": "https://imgs.crazygames.com/escape-road-asm_1x1/20250724105032/escape-road-asm_1x1-cover?format=auto&quality=100&metadata=none&width=1200",
+  "imagemdefundo": "https://imgs.crazygames.com/escape-road-asm_1x1/20250724105032/escape-road-asm_1x1-cover?format=auto&quality=100&metadata=none&width=1200",
+  "bio": "Autor: ViquinhoDev (Vicente Bajay)",
+  "descricao": "Um Jogo que voce dirije um carro e tenque escapar da policia",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"CODEPEN",
+      "link":"https://codepen.io/ViquinhoDev/pen/MYjoppq"
+    }
+  ]
+}
