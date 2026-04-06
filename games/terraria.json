@@ -1,0 +1,15 @@
+{
+  "id": "terraria",
+  "nome": "Terraria",
+  "cover": "https://ankergames.net/uploads/poster/10-2024/bu6CfD7fYd.webp",
+  "imagemdefundo": "https://ankergames.net/uploads/poster/10-2024/cover-ZglncuzRvL.webp",
+  "bio": "Mundo de blocos",
+  "descricao": "Terraria é um jogo de aventura sandbox 2D sobre exploração, vivência e sobrevivência. Imagine um mundo pixelado onde você pode construir, batalhar, cavar e encontrar tudo o que desejar. O jogo começa simples: você é criado em um mundo aleatório com ferramentas básicas e, a partir daí, pode escolher seu próprio caminho.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"RAR",
+      "link":"https://www.mediafire.com/file/fxx11xolvdm1722/Terraria%2528v1.4.4.9.v4%2529_By_RafaYoshi.rar/file"
+    }
+  ]
+}
