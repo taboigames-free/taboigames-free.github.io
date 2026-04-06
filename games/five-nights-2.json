@@ -1,0 +1,15 @@
+{
+  "id": "five-nights-2",
+  "nome": "Five Nights at Freddy’s 2",
+  "cover": "https://gamdie.com/wp-content/uploads/2023/03/five-nights-at-freddys-2-poster-gamdie.jpg.webp",
+  "imagemdefundo": "",
+  "bio": "Horror",
+  "descricao": "Bem-vindos de volta à nova e melhorada Freddy Fazbear's Pizza! Como sempre, a Fazbear Entertainment não se responsabiliza por mortes ou desmembramentos.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"ZIP",
+      "link":"https://buffdrive.com/2T8"
+    }
+  ]
+}
