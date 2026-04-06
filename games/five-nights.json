@@ -1,0 +1,15 @@
+{
+  "id": "five-nights",
+  "nome": "Five Nights at Freddy's",
+  "cover": "https://ankergames.net/uploads/poster/07-2025/FSa3Acd4P2.webp",
+  "imagemdefundo": "",
+  "bio": "Terror",
+  "descricao": "Bem-vindo ao seu novo emprego de verão na Pizzaria Freddy Fazbear, onde crianças e pais vêm para se divertir e comer à vontade! A principal atração é o Freddy Fazbear, é claro, e seus dois amigos. Eles são robôs animatrônicos, programados para agradar o público! O comportamento dos robôs, porém, tornou-se um tanto imprevisível à noite, e foi muito mais barato contratar você como segurança do que encontrar um técnico.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"ZIP",
+      "link":"https://buffdrive.com/5u0"
+    }
+  ]
+}
