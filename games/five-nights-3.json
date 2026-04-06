@@ -1,0 +1,15 @@
+{
+  "id": "five-nights-3",
+  "nome": "Five Nights at Freddy’s 3",
+  "cover": "https://gamdie.com/wp-content/uploads/2023/03/five-nights-at-freddys-3-poster-gamdie.jpg.webp",
+  "imagemdefundo": "",
+  "bio": "Horror",
+  "descricao": "Trinta anos após o fechamento da Freddy Fazbear's Pizza, os eventos que ali ocorreram tornaram-se nada mais do que um rumor e uma lembrança de infância, mas os proprietários da 'Fazbear's Fright: The Horror Attraction' estão determinados a reviver a lenda e tornar a experiência o mais autêntica possível para os visitantes.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"ZIP",
+      "link":"https://buffdrive.com/2T2"
+    }
+  ]
+}
