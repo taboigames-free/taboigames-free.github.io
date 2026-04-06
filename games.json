@@ -19,6 +19,14 @@
     "id": "scape-road",
     "json": "games/scaperoad.json"
   },
+      {
+    "id": "terraria",
+    "json": "games/terraria.json"
+  },
+      {
+    "id": "prision",
+    "json": "games/prision.json"
+  },
     {
     "id": "drive-mad",
     "json": "games/drive.json"
