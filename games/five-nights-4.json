@@ -1,0 +1,15 @@
+{
+  "id": "five-nights-4",
+  "nome": "Five Nights at Freddy’s 4",
+  "cover": "https://gamdie.com/wp-content/uploads/2023/03/five-nights-at-freddys-4-poster-gamdie.jpg.webp",
+  "imagemdefundo": "",
+  "bio": "Horror",
+  "descricao": "Neste último capítulo da história original de Five Nights at Freddy's, você deve mais uma vez se defender de Freddy Fazbear, Chica, Bonnie, Foxy e criaturas ainda piores que espreitam nas sombras.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"ZIP",
+      "link":"https://buffdrive.com/5uh"
+    }
+  ]
+}
