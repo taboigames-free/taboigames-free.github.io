@@ -30,5 +30,21 @@
     {
     "id": "drive-mad",
     "json": "games/drive.json"
-  }
+  },
+      {
+    "id": "five-nights",
+    "json": "games/five-nights.json"
+  },
+      {
+    "id": "five-nights-2",
+    "json": "games/five-nights-2.json"
+  },
+      {
+    "id": "five-nights-3",
+    "json": "games/five-nights-3.json"
+  },
+      {
+    "id": "five-nights-4",
+    "json": "games/five-nights-4.json"
+  },
 ]
