@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Documento</title>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+body{
+    background:#0b141f;
+    color:#c7d5e0;
+    font-family:Arial;
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+}
+a{ color:#66c0f4; }
+</style>
+</head>
+
+<body>
+
+<div id="content">Carregando...</div>
+
+<script>
+const file = new URLSearchParams(location.search).get("file");
+
+fetch(file)
+.then(r => r.text())
+.then(md => {
+    document.getElementById("content").innerHTML = marked.parse(md);
+});
+</script>
+
+</body>
+</html>
