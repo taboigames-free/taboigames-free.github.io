@@ -1,0 +1,15 @@
+{
+  "id": "prision",
+  "nome": "Prison Architect",
+  "cover": "https://ankergames.net/uploads/poster/10-2024/20JhVHlOZe.webp",
+  "imagemdefundo": "https://ankergames.net/uploads/poster/10-2024/cover-wwCSrhuCKl.webp",
+  "bio": "Administração de prisão",
+  "descricao": "Só o diretor mais implacável do mundo consegue conter os prisioneiros mais implacáveis. Projete e desenvolva sua penitenciária personalizada em Prison Architect. Aloque recursos para otimizar seu complexo, mas não restrinja o fluxo de pessoas para evitar inundações, incêndios, brigas ou motins generalizados.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"ZIP",
+      "link":"https://buffdrive.com/5PT"
+    }
+  ]
+}
