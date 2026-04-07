@@ -1,0 +1,15 @@
+{
+  "id": "gta-4",
+  "nome": "Grand Theft Auto IV (GTA4)",
+  "cover": "https://ankergames.net/uploads/poster/11-2024/8Fk3pSaHSG.webp",
+  "imagemdefundo": "",
+  "bio": "Simulador",
+  "descricao": "Niko Bellic, Johnny Klebitz e Luis Lopez têm uma coisa em comum: vivem na pior cidade da América. Liberty City venera dinheiro e status, sendo o paraíso para quem os possui e um verdadeiro pesadelo para quem não os tem.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"RAR",
+      "link":"https://ankergames.net/game/grand-theft-auto-iv"
+    }
+  ]
+}
