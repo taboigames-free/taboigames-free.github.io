@@ -47,4 +47,20 @@
     "id": "five-nights-4",
     "json": "games/five-nights-4.json"
   }
+        {
+    "id": "gta-4",
+    "json": "games/gta-4.json"
+  }
+        {
+    "id": "gta-5",
+    "json": "games/gta-5.json"
+  }
+        {
+    "id": "forza-4",
+    "json": "games/forza-4.json"
+  }
+        {
+    "id": "forza-5",
+    "json": "games/forza-5.json"
+  }
 ]
