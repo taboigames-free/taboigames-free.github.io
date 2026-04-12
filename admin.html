@@ -1,0 +1,14 @@
+<h1>Visitas do site</h1>
+
+<p>Total: <span id="visitas">0</span></p>
+
+<script>
+async function carregar() {
+  const res = await fetch("https://api.countapi.xyz/get/taboi-games-visitas/total");
+  const data = await res.json();
+
+  document.getElementById("visitas").innerText = data.value;
+}
+
+carregar();
+</script>
