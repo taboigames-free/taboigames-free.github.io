@@ -63,7 +63,10 @@ async function carregarJogos(){
 carregarJogos();
 </script>
 <script>
-fetch("https://api.countapi.xyz/hit/taboi-games-visitas/total");
+fetch("https://api.countapi.xyz/hit/taboi-games-viquinho123/total")
+  .then(res => res.json())
+  .then(data => console.log("Visitas:", data.value))
+  .catch(err => console.error(err));
 </script>
 </body>
 </html>
