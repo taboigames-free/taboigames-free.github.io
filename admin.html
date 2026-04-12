@@ -1,11 +1,25 @@
-<h1>Visitas do site</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Painel</title>
+</head>
+<body>
 
-<p>Total: <span id="visitas">0</span></p>
+<h1>Visitas</h1>
+<p id="v">Carregando...</p>
 
 <script>
-fetch("https://api.countapi.xyz/get/taboi-games-viquinho123/total")
+fetch("https://api.countapi.xyz/get/taboi-games-viquinho999/visitas")
   .then(res => res.json())
   .then(data => {
-    document.body.innerHTML = "Visitas: " + data.value;
+    document.getElementById("v").innerText = data.value;
+  })
+  .catch(err => {
+    document.getElementById("v").innerText = "Erro";
+    console.error(err);
   });
 </script>
+
+</body>
+</html>
