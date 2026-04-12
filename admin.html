@@ -10,14 +10,13 @@
 <p id="v">Carregando...</p>
 
 <script>
-fetch("https://api.countapi.xyz/get/taboi-games-viquinho999/visitas")
+fetch("https://api.allorigins.win/raw?url=https://api.countapi.xyz/get/taboi-games-viquinho999/visitas")
   .then(res => res.json())
   .then(data => {
     document.getElementById("v").innerText = data.value;
   })
-  .catch(err => {
+  .catch(() => {
     document.getElementById("v").innerText = "Erro";
-    console.error(err);
   });
 </script>
 
