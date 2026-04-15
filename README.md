@@ -77,23 +77,6 @@ python -m http.server
 
 ---
 
-## 🧩 Como Adicionar Jogos
-
-1. Abra `games.json`
-2. Adicione um novo objeto seguindo o padrão:
-
-```json
-{
-  "name": "Nome do Jogo",
-  "page": "data/jogo.json",
-  "cover": "assets/images/jogo.jpg"
-}
-```
-
-3. Crie o arquivo JSON do jogo dentro da pasta `data/`.
-
----
-
 ## 🔒 Segurança
 
 A plataforma segue uma **Licença de Segurança própria**, garantindo:
