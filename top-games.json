@@ -10,18 +10,18 @@
     "id": "2",
     "json": "games/stardewvalley.json",
     "zoom": "105%",
-    "posY": "150%"
+    "posY": "80%"
   },
   {
     "id": "3",
     "json": "games/prision.json",
     "zoom": "115%",
-    "posY": "100%"
+    "posY": "80%"
   },
   {
     "id": "4",
     "json": "games/poppy.json",
     "zoom": "108%",
-    "posY": "170%"
+    "posY": "99%"
   }
 ]
