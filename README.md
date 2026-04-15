@@ -123,3 +123,5 @@ Você pode:
 Este projeto possui licença própria de segurança e uso.
 
 © 2026 Taboi-Games — Todos os direitos reservados.
+
+Desenvolvido por: Vicente Bajay ([ViquinhoDev](https://github.com/ViquinhoDev)
