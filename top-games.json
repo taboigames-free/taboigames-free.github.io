@@ -1,27 +1,6 @@
-
 [
-  {
-    "id": "1",
-    "json": "games/minecraft.json",
-    "zoom": "110%",
-    "posY": "80%"
-  },
-  {
-    "id": "2",
-    "json": "games/stardewvalley.json",
-    "zoom": "105%",
-    "posY": "80%"
-  },
-  {
-    "id": "3",
-    "json": "games/prision.json",
-    "zoom": "115%",
-    "posY": "80%"
-  },
-  {
-    "id": "4",
-    "json": "games/poppy.json",
-    "zoom": "108%",
-    "posY": "99%"
-  }
+  { "id": "1", "json": "games/minecraft.json" },
+  { "id": "2", "json": "games/stardewvalley.json" },
+  { "id": "3", "json": "games/prision.json" },
+  { "id": "4", "json": "games/poppy.json" }
 ]
