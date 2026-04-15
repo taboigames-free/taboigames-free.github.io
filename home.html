@@ -26,10 +26,11 @@ TABOI-games
 
     <div class="top-content">
         <h1 id="top-title"></h1>
-
-        <div class="dots" id="dots"></div>
     </div>
 </div>
+
+<!-- bolinhas ficam fora -->
+<div class="dots" id="dots"></div>
     
 <div class="container">
 <h2>Jogos</h2>
@@ -72,10 +73,9 @@ async function carregarJogos(){
 
 carregarJogos();
 </script>
-    <script>
+<script>
 let topJogos = [];
 let index = 0;
-let intervalo;
 
 async function carregarTop(){
 
@@ -87,37 +87,30 @@ async function carregarTop(){
         const r = await fetch(item.json);
         const data = await r.json();
 
-topJogos.push({
-    ...data,
-    zoom: item.zoom || "110%",
-    posY: item.posY || "120%"
-});
+        topJogos.push(data);
     }
 
     criarDots();
     mostrarTop(0);
-    iniciarLoop();
+    loop();
 }
 
 function criarDots(){
     const dots = document.getElementById("dots");
 
-    topJogos.forEach((_, i)=>{
+    topJogos.forEach((_,i)=>{
         dots.innerHTML += `<span onclick="mostrarTop(${i})"></span>`;
     });
 }
-        
+
 function mostrarTop(i){
 
     index = i;
 
     const jogo = topJogos[i];
 
-    const bg = document.getElementById("top-bg");
-
-    bg.style.backgroundImage = `url('${jogo.cover}')`;
-    bg.style.backgroundSize = jogo.zoom;
-    bg.style.backgroundPosition = `center ${jogo.posY}`;
+    document.getElementById("top-bg").style.backgroundImage =
+        `url('${jogo.cover}')`;
 
     document.getElementById("top-title").innerText = jogo.nome;
 
@@ -125,19 +118,11 @@ function mostrarTop(i){
     document.querySelectorAll(".dots span")[i].classList.add("active");
 }
 
-function iniciarLoop(){
-
-    intervalo = setInterval(()=>{
-
-        index++;
-
-        if(index >= topJogos.length){
-            index = 0;
-        }
-
+function loop(){
+    setInterval(()=>{
+        index = (index + 1) % topJogos.length;
         mostrarTop(index);
-
-    }, 5000);
+    },5000);
 }
 
 carregarTop();
