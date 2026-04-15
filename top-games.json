@@ -1,0 +1,6 @@
+[
+  { "id": "1", "json": "games/minecraft.json"},
+  { "id": "2", "json": "games/stardewvalley.json" },
+  { "id": "3", "json": "games/prision.json" },
+  { "id": "4", "json": "games/poppy.json" }
+]
