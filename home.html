@@ -109,8 +109,8 @@ function mostrarTop(i){
 
     const jogo = topJogos[i];
 
-    document.getElementById("top-bg").style.backgroundImage =
-        `url('${jogo.cover}')`;
+document.getElementById("top-bg").style.backgroundImage =
+    `url('${jogo.imagemdefundo || jogo.cover}')`;
 
     document.getElementById("top-title").innerText = jogo.nome;
 
