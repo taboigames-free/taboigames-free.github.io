@@ -21,6 +21,16 @@ TABOI-games
 </nav>
 </header>
 
+<div class="top-slider">
+    <div class="top-bg" id="top-bg"></div>
+
+    <div class="top-content">
+        <h1 id="top-title"></h1>
+
+        <div class="dots" id="dots"></div>
+    </div>
+</div>
+    
 <div class="container">
 <h2>Jogos</h2>
 <div class="games" id="games"></div>
@@ -41,23 +51,23 @@ async function carregarJogos(){
 
     const container = document.getElementById("games");
 
-    jogos.forEach(jogo=>{
+    // mantém ordem e limita a 12
+    const jogosLimitados = jogos.slice(0, 12);
 
-        fetch(jogo.json)
-        .then(r=>r.json())
-        .then(data=>{
+    for (const jogo of jogosLimitados){
 
-            container.innerHTML += `
-            <div class="game"
-            onclick="location.href='thegame.html?game=${data.id}'">
+        const r = await fetch(jogo.json);
+        const data = await r.json();
 
-                <img src="${data.cover}">
-                <h3>${data.nome}</h3>
+        container.innerHTML += `
+        <div class="game"
+        onclick="location.href='thegame.html?game=${data.id}'">
 
-            </div>`;
-        });
+            <img src="${data.cover}">
+            <h3>${data.nome}</h3>
 
-    });
+        </div>`;
+    }
 }
 
 carregarJogos();
