@@ -87,7 +87,11 @@ async function carregarTop(){
         const r = await fetch(item.json);
         const data = await r.json();
 
-        topJogos.push(data);
+topJogos.push({
+    ...data,
+    zoom: item.zoom || "110%",
+    posY: item.posY || "120%"
+});
     }
 
     criarDots();
@@ -102,15 +106,18 @@ function criarDots(){
         dots.innerHTML += `<span onclick="mostrarTop(${i})"></span>`;
     });
 }
-
+        
 function mostrarTop(i){
 
     index = i;
 
     const jogo = topJogos[i];
 
-    document.getElementById("top-bg").style.backgroundImage =
-        `url('${jogo.cover}')`;
+    const bg = document.getElementById("top-bg");
+
+    bg.style.backgroundImage = `url('${jogo.cover}')`;
+    bg.style.backgroundSize = jogo.zoom;
+    bg.style.backgroundPosition = `center ${jogo.posY}`;
 
     document.getElementById("top-title").innerText = jogo.nome;
 
