@@ -141,20 +141,19 @@ footer{
 
     filter: brightness(0.9);
 }
-.top-bg::after{
-    content: "";
+.top-bg{
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
 
     width: 100%;
-    height: 140px;
+    height: 100%;
 
-    background: linear-gradient(
-        to bottom,
-        rgba(15,23,42,0),
-        rgba(15,23,42,1)
-    );
+    background-size: cover;          /* melhor para banner */
+    background-position: center 60%; /* desce um pouco (não exagera) */
+    background-repeat: no-repeat;
+
+    filter: brightness(0.9);
 }
 .top-content{
     position: relative;
@@ -211,8 +210,9 @@ footer{
     margin: 0;
     font-size: 28px;
 
-    max-width: 90%;           /* evita cortar */
-    white-space: nowrap;      /* evita quebrar linha */
+    max-width: 90%;
+
+    white-space: normal;        /* permite quebrar linha */
     overflow: hidden;
-    text-overflow: ellipsis;  /* coloca ... se for muito grande */
+    word-break: break-word;     /* quebra palavras grandes */
 }
