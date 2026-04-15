@@ -134,18 +134,18 @@ footer{
     left: 0;
 
     width: 100%;
-    height: 100%; /* corrigido */
+    height: 100%;
 
-    background-size: cover;
-    background-position: center 65%; /* desce a imagem */
+    background-size: 110%;          /* zoom- (mostra mais da imagem, menos corte) */
+    background-position: center 80%; /* bem mais para baixo */
     background-repeat: no-repeat;
 
-    transition: background-image 0.6s ease;
+    transition: all 0.6s ease;
 
     filter: brightness(0.9);
 }
 
-/* degradê inferior estilo Steam */
+/* degradê */
 .top-bg::after{
     content: "";
     position: absolute;
