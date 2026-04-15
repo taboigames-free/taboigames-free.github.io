@@ -1,3 +1,6 @@
+<img width="300" height="300" alt="logo taboi-games" src="https://github.com/user-attachments/assets/5ea5d508-6330-4bdc-81c0-fa867ed7d125" />
+
+
 # 🎮 TABOI-GAMES
 
 Bem-vindo ao **Taboi-Games**, uma plataforma dedicada à distribuição, organização e acesso simplificado a jogos digitais através da web.
