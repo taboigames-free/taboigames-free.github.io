@@ -62,12 +62,5 @@ async function carregarJogos(){
 
 carregarJogos();
 </script>
-<script>
-fetch("https://api.allorigins.win/raw?url=https://api.countapi.xyz/get/taboi-games-viquinho999/visitas")
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById("v").innerText = data.value;
-  });
-</script>
 </body>
 </html>
