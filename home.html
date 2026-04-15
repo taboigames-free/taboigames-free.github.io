@@ -72,5 +72,68 @@ async function carregarJogos(){
 
 carregarJogos();
 </script>
+    <script>
+let topJogos = [];
+let index = 0;
+let intervalo;
+
+async function carregarTop(){
+
+    const res = await fetch("top-games.json");
+    const lista = await res.json();
+
+    for (const item of lista){
+
+        const r = await fetch(item.json);
+        const data = await r.json();
+
+        topJogos.push(data);
+    }
+
+    criarDots();
+    mostrarTop(0);
+    iniciarLoop();
+}
+
+function criarDots(){
+    const dots = document.getElementById("dots");
+
+    topJogos.forEach((_, i)=>{
+        dots.innerHTML += `<span onclick="mostrarTop(${i})"></span>`;
+    });
+}
+
+function mostrarTop(i){
+
+    index = i;
+
+    const jogo = topJogos[i];
+
+    document.getElementById("top-bg").style.backgroundImage =
+        `url('${jogo.cover}')`;
+
+    document.getElementById("top-title").innerText = jogo.nome;
+
+    document.querySelectorAll(".dots span").forEach(d=>d.classList.remove("active"));
+    document.querySelectorAll(".dots span")[i].classList.add("active");
+}
+
+function iniciarLoop(){
+
+    intervalo = setInterval(()=>{
+
+        index++;
+
+        if(index >= topJogos.length){
+            index = 0;
+        }
+
+        mostrarTop(index);
+
+    }, 5000);
+}
+
+carregarTop();
+</script>
 </body>
 </html>
