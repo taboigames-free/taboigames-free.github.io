@@ -28,8 +28,8 @@
     "json": "games/prision.json"
   },
     {
-    "id": "drive-mad",
-    "json": "games/drive.json"
+    "id": "arc-raiders",
+    "json": "games/arc-raiders.json"
   },
       {
     "id": "among-us",
@@ -78,5 +78,9 @@
         {
     "id": "forza-5",
     "json": "games/forza-5.json"
+  },
+      {
+    "id": "drive-mad",
+    "json": "games/drive.json"
   }
 ]
