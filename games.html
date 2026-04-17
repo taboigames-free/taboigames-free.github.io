@@ -7,6 +7,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
 
+
 <body>
 
 <header>
@@ -32,26 +33,33 @@ TABOI-games - Jogos pré-pagos gratuitos para PC
 </footer>
 
 <script>
-
 let lista = [];
 
-async function carregar(){
+async function carregar() {
     const res = await fetch("games.json");
-    lista = await res.json();
+    const jogos = await res.json();
+
+    // Em games.html não existe limitação: carregamos 100% da lista.
+    lista = await Promise.all(
+        jogos.map(async (jogo) => {
+            const r = await fetch(jogo.json);
+            return r.json();
+        })
+    );
+
     mostrar("");
 }
 
-async function mostrar(filtro){
-
+function mostrar(filtro) {
+    const termo = filtro.toLowerCase();
     const container = document.getElementById("games");
-    container.innerHTML="";
 
-    for(const jogo of lista){
+    container.innerHTML = "";
 
-        const data = await fetch(jogo.json).then(r=>r.json());
-
-        if(!data.nome.toLowerCase().includes(filtro.toLowerCase()))
+    for (const data of lista) {
+        if (!data.nome.toLowerCase().includes(termo)) {
             continue;
+        }
 
         container.innerHTML += `
         <div class="game"
@@ -65,10 +73,9 @@ async function mostrar(filtro){
 }
 
 document.getElementById("search").oninput =
-(e)=>mostrar(e.target.value);
+(e) => mostrar(e.target.value);
 
 carregar();
-
 </script>
 
 </body>
