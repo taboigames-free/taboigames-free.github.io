@@ -32,6 +32,22 @@
     "json": "games/drive.json"
   },
       {
+    "id": "among-us",
+    "json": "games/among-us.json"
+  },
+      {
+    "id": "five-night-help-wanted",
+    "json": "games/five-help-wanted.json"
+  },
+      {
+    "id": "five-nights-security-breach",
+    "json": "games/five-nights-security.json"
+  },
+      {
+    "id": "ff-22",
+    "json": "games/fifa22.json"
+  },
+      {
     "id": "five-nights",
     "json": "games/five-nights.json"
   },
