@@ -27,6 +27,39 @@ body{
     min-height:100vh;
     animation:bgShift 12s ease-in-out infinite alternate;
 }
+html{
+    scrollbar-width:thin;
+    scrollbar-color:var(--neon) rgba(8, 13, 28, .95);
+}
+
+body::-webkit-scrollbar{
+    width:14px;
+}
+
+body::-webkit-scrollbar-track{
+    background:
+        linear-gradient(180deg, rgba(7, 11, 23, .98), rgba(11, 18, 36, .98));
+    border-left:1px solid rgba(155, 92, 255, .2);
+}
+
+body::-webkit-scrollbar-thumb{
+    background:
+        linear-gradient(180deg, rgba(0, 229, 255, .95), rgba(155, 92, 255, .95));
+    border-radius:999px;
+    border:2px solid rgba(5, 7, 15, .95);
+    box-shadow:
+        0 0 12px rgba(0, 229, 255, .55),
+        inset 0 0 8px rgba(255, 255, 255, .25);
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background:
+        linear-gradient(180deg, #21ecff, #b176ff);
+    box-shadow:
+        0 0 16px rgba(0, 229, 255, .8),
+        0 0 20px rgba(155, 92, 255, .55);
+}
+
 
 /* HEADER */
 header{
