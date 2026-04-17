@@ -99,7 +99,7 @@ A plataforma segue uma **Licença de Segurança própria**, garantindo:
 ## 🌐 Links Oficiais
 
 * Página principal:
-  [[https://taboigames-free.github.io/home.html]((https://taboigames-free.github.io/home.html))]
+  [https://taboigames-free.github.io/home.html](https://taboigames-free.github.io/home.html)
 
 * GitHub:
   [https://github.com/taboigames-free/taboigames-free.github.io](https://github.com/taboigames-free/taboigames-free.github.io)
