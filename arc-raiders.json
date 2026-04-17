@@ -1,0 +1,15 @@
+{
+  "id": "arc-raiders",
+  "nome": "ARC Raiders",
+  "cover": "https://upload.wikimedia.org/wikipedia/en/7/73/Arc_Raiders_cover_art.jpg",
+  "imagemdefundo": "https://ankergames.net/uploads/poster/10-2024/cover-9ZFwDbqBfI.webp",
+  "bio": "Simulador",
+  "descricao": "ARC Raiders é um jogo de tiro em terceira pessoa focado em extração e sobrevivência. Desenvolvido pela Embark Studios, o título coloca você no papel de um Combatente explorando uma Terra futurista pós-apocalíptica.",
+  "videotrailer": "",
+  "downloads":[
+    {
+      "tipo":"STEAM",
+      "link":"https://store.steampowered.com/app/1808500/ARC_Raiders/"
+    }
+  ]
+}
