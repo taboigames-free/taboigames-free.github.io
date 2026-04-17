@@ -104,6 +104,34 @@ nav a:hover::after{
     gap:22px;
 }
 
+.more-games-wrap{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+}
+
+.more-games-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:linear-gradient(90deg, #1f86ff, #4da4ff);
+    color:#f2f8ff;
+    text-decoration:none;
+    font-weight:700;
+    padding:12px 18px;
+    border-radius:10px;
+    border:1px solid rgba(150, 205, 255, .35);
+    box-shadow:0 8px 20px rgba(12, 75, 160, .35);
+    transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.more-games-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(12, 75, 160, .45);
+    filter:brightness(1.06);
+}
+
+
 .game{
     background:linear-gradient(180deg, rgba(26,36,64,.96), rgba(13,20,38,.96));
     border:1px solid var(--border);
