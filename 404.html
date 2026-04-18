@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 | TABOI-games</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+<style>
+.error-wrap{
+    min-height:calc(100vh - 180px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:30px 24px;
+}
+
+.error-card{
+    width:min(760px, 100%);
+    text-align:center;
+    background:linear-gradient(170deg, rgba(18,26,48,.92), rgba(8,12,24,.95));
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:40px 28px;
+    box-shadow:var(--shadow);
+}
+
+.error-code{
+    font-size:clamp(64px, 16vw, 144px);
+    line-height:1;
+    margin:0;
+    letter-spacing:4px;
+    color:var(--neon);
+    text-shadow:
+        0 0 18px rgba(0, 229, 255, .8),
+        0 0 40px rgba(155, 92, 255, .45);
+    animation:logoPulse 2.4s ease-in-out infinite;
+}
+
+.error-title{
+    margin:10px 0 8px;
+    font-size:clamp(24px, 4vw, 34px);
+}
+
+.error-text{
+    margin:0 auto;
+    max-width:560px;
+    color:var(--text-soft);
+    line-height:1.7;
+}
+
+.error-actions{
+    display:flex;
+    gap:14px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:28px;
+}
+
+.error-btn{
+    display:inline-block;
+    border-radius:10px;
+    padding:12px 18px;
+    font-weight:700;
+    text-decoration:none;
+    transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.error-btn.primary{
+    color:#071320;
+    background:linear-gradient(90deg, var(--neon), #6af7ff);
+    box-shadow:0 0 16px rgba(0,229,255,.45);
+}
+
+.error-btn.secondary{
+    color:var(--text);
+    background:linear-gradient(180deg, rgba(26,36,64,.96), rgba(13,20,38,.96));
+    border:1px solid var(--border);
+}
+
+.error-btn:hover{
+    transform:translateY(-2px);
+    filter:brightness(1.06);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo" onclick="location.href='home.html'">TABOI-games</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="https://github.com/taboigames-free/taboigames-free.github.io/tree/main">Ver no GitHub</a>
+    </nav>
+</header>
+
+<main class="error-wrap">
+    <section class="error-card">
+        <p class="error-code">404</p>
+        <h1 class="error-title">Ops! Página não encontrada</h1>
+        <p class="error-text">
+            A página que você tentou acessar não existe ou foi movida.
+            Você pode voltar para a Home ou explorar a lista de jogos da TABOI-games.
+        </p>
+
+        <div class="error-actions">
+            <a class="error-btn primary" href="home.html">Voltar para Home</a>
+            <a class="error-btn secondary" href="games.html">Ver todos os jogos</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>TABOI-games - Jogos pré-pagos gratuitos para PC <br><br> Desenvolvedor: ViquinhoDev (Vicente Bajay)</p>
+    <a href="https://github.com/taboigames-free/taboigames-free.github.io/tree/main">Ver no GitHub</a>
+</footer>
+
+</body>
+</html>
