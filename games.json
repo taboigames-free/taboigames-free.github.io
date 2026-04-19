@@ -78,9 +78,5 @@
         {
     "id": "forza-5",
     "json": "games/forza-5.json"
-  },
-      {
-    "id": "drive-mad",
-    "json": "games/drive.json"
   }
 ]
