@@ -6,7 +6,117 @@
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
+<style>
+    .modal {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+}
 
+.modal-content {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    margin: auto;
+    padding: 0;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    border: 1px solid #ff6b00;
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-header {
+    padding: 20px 24px;
+    background: linear-gradient(90deg, #ff6b00, #ff8c00);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.close-modal {
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    line-height: 1;
+    color: white;
+}
+
+.close-modal:hover {
+    transform: scale(1.2);
+    color: #2d2d2d;
+}
+
+.modal-body {
+    padding: 24px;
+    color: #eee;
+    line-height: 1.6;
+}
+
+.modal-body p {
+    margin: 12px 0;
+}
+
+.lucca-note {
+    background: rgba(255,0,0,0.15);
+    border-left: 4px solid #ff4444;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.modal-footer {
+    padding: 16px 24px 24px;
+    text-align: center;
+}
+
+.close-modal-btn {
+    background: linear-gradient(90deg, #ff6b00, #ff8c00);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-modal-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255,107,0,0.4);
+}
+
+.hidden-modal {
+    display: none !important;
+}
+</style>
 <body>
 
 <header>
@@ -40,6 +150,27 @@ TABOI-games
 </div>
 </div>
 
+    <!-- MODAL DE ENTRADA -->
+<div id="entryModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>🚀 TABOI-games</h2>
+            <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Este site foi desenvolvido por <strong>Vicente Bajay (ViquinhoDev)</strong>.</p>
+            <p>————————————————————————</p>
+            <p class="lucca-note">⚠️ <strong>Sobre o Lucca:</strong> Ele é um <strong>MENTIROSO</strong>! Não fez NADA para a TABOI-games.<br>
+            Tudo foi feito por <strong>Vicente Bajay</strong> - desde o design, desenvolvimento, jogos, até a hospedagem e documentação.</p>
+            <p>————————————————————————</p>
+            <p>✨ Créditos exclusivos para <strong>ViquinhoDev</strong> ✨</p>
+        </div>
+        <div class="modal-footer">
+            <button class="close-modal-btn">Fechar</button>
+        </div>
+    </div>
+</div>
+    
 <footer>
 <p>
 TABOI-games - Jogos pré-pagos gratuitos para PC | Desenvolvedor: ViquinhoDev (Vicente Bajay)
@@ -147,6 +278,42 @@ function loop(){
 }
 
 carregarTop();
+</script>
+    <script>
+// MODAL DE ENTRADA - SÓ APARECE UMA VEZ POR SESSÃO
+(function() {
+    // Verifica se o modal já foi mostrado nesta sessão
+    if (!sessionStorage.getItem('modalShown')) {
+        // Cria o modal se não existir (já existe no HTML, mas garantimos que não está oculto)
+        const modal = document.getElementById('entryModal');
+        if (modal) {
+            modal.classList.remove('hidden-modal');
+            
+            // Função para fechar o modal
+            function closeModal() {
+                modal.classList.add('hidden-modal');
+                sessionStorage.setItem('modalShown', 'true');
+            }
+            
+            // Fechar pelo X
+            const closeBtn = document.querySelector('#entryModal .close-modal');
+            if (closeBtn) closeBtn.onclick = closeModal;
+            
+            // Fechar pelo botão
+            const closeFooterBtn = document.querySelector('#entryModal .close-modal-btn');
+            if (closeFooterBtn) closeFooterBtn.onclick = closeModal;
+            
+            // Fechar clicando fora do modal
+            modal.onclick = function(e) {
+                if (e.target === modal) closeModal();
+            };
+        }
+    } else {
+        // Se já foi mostrado, esconde
+        const modal = document.getElementById('entryModal');
+        if (modal) modal.classList.add('hidden-modal');
+    }
+})();
 </script>
 </body>
 </html>
