@@ -7,7 +7,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
 <style>
-    .modal {
+.modal {
     display: flex;
     position: fixed;
     z-index: 9999;
@@ -22,14 +22,14 @@
 }
 
 .modal-content {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(135deg, #0a1628 0%, #0d1b3e 100%);
     margin: auto;
     padding: 0;
     border-radius: 20px;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    border: 1px solid #ff6b00;
+    box-shadow: 0 10px 40px rgba(0,100,255,0.3);
+    border: 1px solid #2a6eff;
     animation: modalFadeIn 0.3s ease;
 }
 
@@ -46,7 +46,7 @@
 
 .modal-header {
     padding: 20px 24px;
-    background: linear-gradient(90deg, #ff6b00, #ff8c00);
+    background: linear-gradient(90deg, #1a5cff, #2a6eff, #3a7eff);
     border-radius: 20px 20px 0 0;
     display: flex;
     justify-content: space-between;
@@ -70,12 +70,12 @@
 
 .close-modal:hover {
     transform: scale(1.2);
-    color: #2d2d2d;
+    color: #a0c4ff;
 }
 
 .modal-body {
     padding: 24px;
-    color: #eee;
+    color: #cce4ff;
     line-height: 1.6;
 }
 
@@ -84,11 +84,12 @@
 }
 
 .lucca-note {
-    background: rgba(255,0,0,0.15);
-    border-left: 4px solid #ff4444;
+    background: rgba(26,92,255,0.15);
+    border-left: 4px solid #2a6eff;
     padding: 12px 16px;
     border-radius: 8px;
     font-size: 0.95rem;
+    color: #d4e4ff;
 }
 
 .modal-footer {
@@ -97,7 +98,7 @@
 }
 
 .close-modal-btn {
-    background: linear-gradient(90deg, #ff6b00, #ff8c00);
+    background: linear-gradient(90deg, #1a5cff, #2a6eff, #3a7eff);
     color: white;
     border: none;
     padding: 12px 32px;
@@ -110,7 +111,8 @@
 
 .close-modal-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255,107,0,0.4);
+    box-shadow: 0 4px 15px rgba(26,92,255,0.4);
+    background: linear-gradient(90deg, #2a6eff, #3a7eff, #4a8eff);
 }
 
 .hidden-modal {
